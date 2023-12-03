@@ -1,0 +1,17 @@
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\bin\Debug\net6.0\BigBall.Context.Contracts.Configuration.deps.json
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\bin\Debug\net6.0\BigBall.Context.Contracts.Configuration.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\bin\Debug\net6.0\BigBall.Context.Contracts.Configuration.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\bin\Debug\net6.0\BigBall.Common.Entity.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\bin\Debug\net6.0\BigBall.Context.Contracts.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\bin\Debug\net6.0\BigBall.Context.Contracts.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\bin\Debug\net6.0\BigBall.Common.Entity.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.csproj.AssemblyReference.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.AssemblyInfoInputs.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.AssemblyInfo.cs
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.csproj.CoreCompileInputs.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.csproj.CopyComplete
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\refint\BigBall.Context.Contracts.Configuration.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\BigBall.Context.Contracts.Configuration.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context.Contracts.Configuration\obj\Debug\net6.0\ref\BigBall.Context.Contracts.Configuration.dll

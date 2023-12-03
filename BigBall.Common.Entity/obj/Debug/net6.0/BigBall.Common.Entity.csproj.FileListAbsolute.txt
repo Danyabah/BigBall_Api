@@ -1,0 +1,12 @@
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\bin\Debug\net6.0\BigBall.Common.Entity.deps.json
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\bin\Debug\net6.0\BigBall.Common.Entity.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\bin\Debug\net6.0\BigBall.Common.Entity.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\BigBall.Common.Entity.csproj.AssemblyReference.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\BigBall.Common.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\BigBall.Common.Entity.AssemblyInfoInputs.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\BigBall.Common.Entity.AssemblyInfo.cs
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\BigBall.Common.Entity.csproj.CoreCompileInputs.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\BigBall.Common.Entity.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\refint\BigBall.Common.Entity.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\BigBall.Common.Entity.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Common.Entity\obj\Debug\net6.0\ref\BigBall.Common.Entity.dll
