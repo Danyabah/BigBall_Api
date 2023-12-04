@@ -2,6 +2,51 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoMapper.Extensions.EnumMapping/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[12.0.0, 13.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.EnumMapping.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.EnumMapping.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[12.0.1]",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
@@ -79,6 +124,44 @@
           }
         }
       },
+      "Microsoft.AspNetCore.JsonPatch/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "3.0.0",
+          "Newtonsoft.Json": "12.0.2",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -90,7 +173,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -750,6 +833,35 @@
           }
         }
       },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -760,6 +872,23 @@
         },
         "build": {
           "build/Swashbuckle.AspNetCore.props": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Newtonsoft/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.0.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "Swashbuckle.AspNetCore.Swagger/6.5.0": {
@@ -1299,10 +1428,129 @@
         "runtime": {
           "bin/placeholder/BigBall.Context.Contracts.Configuration.dll": {}
         }
+      },
+      "BigBall.General/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BigBall.General.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BigBall.General.dll": {}
+        }
+      },
+      "BigBall.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BigBall.Common.Entity": "1.0.0",
+          "BigBall.General": "1.0.0",
+          "BigBall.Repositories.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BigBall.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BigBall.Repositories.dll": {}
+        }
+      },
+      "BigBall.Repositories.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BigBall.Context.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BigBall.Repositories.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BigBall.Repositories.Contracts.dll": {}
+        }
+      },
+      "BigBall.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.EnumMapping": "3.1.0",
+          "BigBall.Common.Entity": "1.0.0",
+          "BigBall.Context.Contracts": "1.0.0",
+          "BigBall.General": "1.0.0",
+          "BigBall.Repositories.Contracts": "1.0.0",
+          "BigBall.Services.Contracts": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BigBall.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BigBall.Services.dll": {}
+        }
+      },
+      "BigBall.Services.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BigBall.Common.Entity": "1.0.0",
+          "BigBall.General": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BigBall.Services.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BigBall.Services.Contracts.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/12.0.1": {
+      "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "type": "package",
+      "path": "automapper/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.EnumMapping/3.1.0": {
+      "sha512": "8cH94J1ExLkMf1L9GOij2t/8KeNnjRd8Rz4q0geFTZxrilLe61/0r4WHb2KGQKOF/wGsFJNeB97sD6qglpGhVQ==",
+      "type": "package",
+      "path": "automapper.extensions.enummapping/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.extensions.enummapping.3.1.0.nupkg.sha512",
+        "automapper.extensions.enummapping.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.EnumMapping.dll",
+        "lib/netstandard2.1/AutoMapper.Extensions.EnumMapping.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+      "sha512": "+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
     "Azure.Core/1.25.0": {
       "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
@@ -1372,6 +1620,32 @@
         "logo.png"
       ]
     },
+    "Microsoft.AspNetCore.JsonPatch/3.0.0": {
+      "sha512": "LQVXEPxV4jIUiVHHUgBzZxOePSdD7wxV1ndtjg1a76JMqoK3siFka2pVfJXwRq0G4hxbYVWxvamqO733wUhQiA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.0.0": {
+      "sha512": "euuKDPev8bb87dzyyDd252jxafKkCNCU0Yh1ujLq7DT7g4sUwUsq1bVnow9isaYFFx+DBWSywUcL8ngSra0QHg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
@@ -1397,10 +1671,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1413,6 +1687,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1422,7 +1697,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -2509,6 +2784,57 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
       "type": "package",
@@ -2519,6 +2845,21 @@
         "build/Swashbuckle.AspNetCore.props",
         "swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Newtonsoft/6.0.0": {
+      "sha512": "UGHxLjY5Y8kLHum7xCIoDG8Gc4X5Ccweo0HuGfU/3Et7FvK3WtEOAZgszyrRAN/jqQuD42G7MaTF2G+5s0QFxQ==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.newtonsoft/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Newtonsoft.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Newtonsoft.pdb",
+        "swashbuckle.aspnetcore.newtonsoft.6.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.newtonsoft.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore.Swagger/6.5.0": {
@@ -3490,15 +3831,48 @@
       "type": "project",
       "path": "../BigBall.Context.Contracts.Configuration/BigBall.Context.Contracts.Configuration.csproj",
       "msbuildProject": "../BigBall.Context.Contracts.Configuration/BigBall.Context.Contracts.Configuration.csproj"
+    },
+    "BigBall.General/1.0.0": {
+      "type": "project",
+      "path": "../BigBall.General/BigBall.General.csproj",
+      "msbuildProject": "../BigBall.General/BigBall.General.csproj"
+    },
+    "BigBall.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../BigBall.Repositories/BigBall.Repositories.csproj",
+      "msbuildProject": "../BigBall.Repositories/BigBall.Repositories.csproj"
+    },
+    "BigBall.Repositories.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BigBall.Repositories.Contracts/BigBall.Repositories.Contracts.csproj",
+      "msbuildProject": "../BigBall.Repositories.Contracts/BigBall.Repositories.Contracts.csproj"
+    },
+    "BigBall.Services/1.0.0": {
+      "type": "project",
+      "path": "../BigBall.Services/BigBall.Services.csproj",
+      "msbuildProject": "../BigBall.Services/BigBall.Services.csproj"
+    },
+    "BigBall.Services.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BigBall.Services.Contracts/BigBall.Services.Contracts.csproj",
+      "msbuildProject": "../BigBall.Services.Contracts/BigBall.Services.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoMapper >= 12.0.1",
+      "AutoMapper.Extensions.EnumMapping >= 3.1.0",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "BigBall.Common.Entity >= 1.0.0",
       "BigBall.Context >= 1.0.0",
+      "BigBall.General >= 1.0.0",
+      "BigBall.Repositories >= 1.0.0",
+      "BigBall.Services >= 1.0.0",
       "ErikEJ.EntityFrameworkCore.SqlServer.DateOnlyTimeOnly >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "Swashbuckle.AspNetCore.Newtonsoft >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -3536,8 +3910,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj": {
+              "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj"
+            },
             "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\BigBall.Context.csproj": {
               "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\BigBall.Context.csproj"
+            },
+            "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj": {
+              "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj"
+            },
+            "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj": {
+              "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj"
+            },
+            "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\BigBall.Services.csproj": {
+              "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\BigBall.Services.csproj"
             }
           }
         }
@@ -3552,6 +3938,18 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
+          "AutoMapper.Extensions.EnumMapping": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
           "ErikEJ.EntityFrameworkCore.SqlServer.DateOnlyTimeOnly": {
             "target": "Package",
             "version": "[6.0.0, )"
@@ -3571,6 +3969,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
+          },
+          "Swashbuckle.AspNetCore.Newtonsoft": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [
