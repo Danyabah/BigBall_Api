@@ -33,8 +33,10 @@ namespace BigBall.Context.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
-                    b.Property<TimeOnly>("ClosingTime")
-                        .HasColumnType("time");
+                    b.Property<string>("ClosingTime")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
 
                     b.Property<DateTimeOffset>("CreatedAt")
                         .HasColumnType("datetimeoffset");
@@ -51,8 +53,10 @@ namespace BigBall.Context.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<TimeOnly>("OpeningTime")
-                        .HasColumnType("time");
+                    b.Property<string>("OpeningTime")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -247,8 +251,8 @@ namespace BigBall.Context.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<DateOnly>("Date")
-                        .HasColumnType("date");
+                    b.Property<DateTimeOffset>("Date")
+                        .HasColumnType("datetimeoffset");
 
                     b.Property<DateTimeOffset?>("DeletedAt")
                         .HasColumnType("datetimeoffset");

@@ -23,12 +23,12 @@
         /// <summary>
         /// Время открытия
         /// </summary>
-        public TimeOnly OpeningTime { get; set; }
+        public string OpeningTime { get; set; }
 
         /// <summary>
         /// Время закрытия
         /// </summary>
-        public TimeOnly ClosingTime { get; set; }
+        public string ClosingTime { get; set; }
 
         public ICollection<Reservation> Reservations { get; set; }
     }

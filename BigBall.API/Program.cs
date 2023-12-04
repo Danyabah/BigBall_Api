@@ -11,7 +11,7 @@ builder.Services.RegistrationControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.RegistrationSwagger();
 builder.Services.AddDbContextFactory<BigBallContext>(options
-    => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), x => x.UseDateOnlyTimeOnly()), ServiceLifetime.Scoped);
+    => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Scoped);
 builder.Services.RegistrationSRC();
 
 var app = builder.Build();

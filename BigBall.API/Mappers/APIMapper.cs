@@ -7,7 +7,6 @@ using BigBall.API.Models.Response;
 using BigBall.Services.Contracts.Enums;
 using BigBall.Services.Contracts.Models;
 using BigBall.Services.Contracts.ModelsRequest;
-using System.IO;
 
 namespace BigBall.API.Mappers
 {

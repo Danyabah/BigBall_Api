@@ -1,0 +1,17 @@
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\bin\Debug\net6.0\BigBall.Services.Contracts.deps.json
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\bin\Debug\net6.0\BigBall.Services.Contracts.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\bin\Debug\net6.0\BigBall.Services.Contracts.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\bin\Debug\net6.0\BigBall.Common.Entity.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\bin\Debug\net6.0\BigBall.General.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\bin\Debug\net6.0\BigBall.Common.Entity.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\bin\Debug\net6.0\BigBall.General.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.csproj.AssemblyReference.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.AssemblyInfoInputs.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.AssemblyInfo.cs
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.csproj.CopyComplete
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\refint\BigBall.Services.Contracts.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\BigBall.Services.Contracts.pdb
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Services.Contracts\obj\Debug\net6.0\ref\BigBall.Services.Contracts.dll

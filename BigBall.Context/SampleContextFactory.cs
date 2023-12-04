@@ -18,8 +18,7 @@ namespace BigBall.Context
             var connectionString = configuration.GetConnectionString("DefaultConnection");
 
             var options = new DbContextOptionsBuilder<BigBallContext>()
-                .UseSqlServer(connectionString,
-                x => x.UseDateOnlyTimeOnly())
+                .UseSqlServer(connectionString)
                 .Options;
 
             return new BigBallContext(options);
