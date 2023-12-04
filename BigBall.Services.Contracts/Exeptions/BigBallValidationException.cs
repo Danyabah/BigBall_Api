@@ -5,7 +5,7 @@ namespace BigBall.Services.Contracts.Exeptions
     /// <summary>
     /// Ошибки валидации
     /// </summary>
-    public class TimeTableValidationException : TimeTableException
+    public class BigBallValidationException : BigBallException
     {
         /// <summary>
         /// Ошибки
@@ -15,7 +15,7 @@ namespace BigBall.Services.Contracts.Exeptions
         /// <summary>
         /// Инициализирует новый экземпляр <see cref="AdministrationValidationException"/>
         /// </summary>
-        public TimeTableValidationException(IEnumerable<InvalidateItemModel> errors)
+        public BigBallValidationException(IEnumerable<InvalidateItemModel> errors)
         {
             Errors = errors;
         }
