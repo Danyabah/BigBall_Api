@@ -45,6 +45,9 @@ namespace BigBall.Services.Services
             model.Id = Guid.NewGuid();
 
             var reservation = mapper.Map<Reservation>(model);
+
+            await SetPriceReservation(reservation, cancellationToken);
+
             reservationWriteRepository.Add(reservation);
             await unitOfWork.SaveChangesAsync(cancellationToken);
 
@@ -79,6 +82,9 @@ namespace BigBall.Services.Services
             }
 
             reservation = mapper.Map<Reservation>(model);
+
+            await SetPriceReservation(reservation, cancellationToken);
+
             reservationWriteRepository.Update(reservation);
             await unitOfWork.SaveChangesAsync(cancellationToken);
 
@@ -160,6 +166,15 @@ namespace BigBall.Services.Services
             reservationModel.Track = mapper.Map<TrackModel>(await trackReadRepository.GetByIdAsync(reservation.TrackId, cancellationToken));
 
             return reservationModel;
+        }
+
+        async private Task SetPriceReservation(Reservation reservation, CancellationToken cancellationToken)
+        {
+            if (reservation.PromotionId.HasValue)
+            {
+                var promotion = await promotionReadRepository.GetByIdAsync(reservation.PromotionId.Value, cancellationToken);
+                reservation.Price -= reservation.Price * (promotion!.PercentageDiscount / 100);
+            }
         }
     }
 }

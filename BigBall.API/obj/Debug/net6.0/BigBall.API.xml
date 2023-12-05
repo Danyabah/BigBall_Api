@@ -34,6 +34,156 @@
             Удалить клуб по Id
             </summary>
         </member>
+        <member name="T:BigBall.API.Controllers.PaymentController">
+            <summary>
+            CRUD контроллер по работе со способами оплаты
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PaymentController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Получить список способов оплаты
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PaymentController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Получить способ оплаты по Id
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PaymentController.Add(BigBall.API.Models.CreateRequest.CreatePaymentRequest,System.Threading.CancellationToken)">
+            <summary>
+            Добавить способ оплаты
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PaymentController.Edit(BigBall.API.Models.Request.PaymentRequest,System.Threading.CancellationToken)">
+            <summary>
+            Изменить способ оплаты
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PaymentController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удалить способ оплаты по Id
+            </summary>
+        </member>
+        <member name="T:BigBall.API.Controllers.PersonController">
+            <summary>
+            CRUD контроллер по работе с клиентами
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PersonController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Получить список клиентов
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PersonController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Получить клиента по Id
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PersonController.Add(BigBall.API.Models.CreateRequest.CreatePersonRequest,System.Threading.CancellationToken)">
+            <summary>
+            Добавить клиента
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PersonController.Edit(BigBall.API.Models.Request.PersonRequest,System.Threading.CancellationToken)">
+            <summary>
+            Изменить клиента
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PersonController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удалить клиента по Id
+            </summary>
+        </member>
+        <member name="T:BigBall.API.Controllers.PromotionController">
+            <summary>
+            CRUD контроллер по работе со скидками и промокодами
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PromotionController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Получить список акций
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PromotionController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Получить акцию по Id
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PromotionController.Add(BigBall.API.Models.CreateRequest.CreatePromotionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Добавить акцию
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PromotionController.Edit(BigBall.API.Models.Request.PromotionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Изменить акцию
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.PromotionController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удалить акцию по Id
+            </summary>
+        </member>
+        <member name="T:BigBall.API.Controllers.ReservationController">
+            <summary>
+            CRUD контроллер по работе с заказами
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.ReservationController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Получить список заказов
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.ReservationController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Получить заказ по Id
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.ReservationController.Add(BigBall.API.Models.CreateRequest.CreateReservationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Добавить заказ
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.ReservationController.Edit(BigBall.API.Models.Request.ReservationRequest,System.Threading.CancellationToken)">
+            <summary>
+            Изменить заказ
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.ReservationController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удалить заказ по Id
+            </summary>
+        </member>
+        <member name="T:BigBall.API.Controllers.TrackController">
+            <summary>
+            CRUD контроллер по работе с дорожками
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.TrackController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Получить список дорожек
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.TrackController.GetById(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Получить дорожку по Id
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.TrackController.Add(BigBall.API.Models.CreateRequest.CreateTrackRequest,System.Threading.CancellationToken)">
+            <summary>
+            Добавить дорожку
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.TrackController.Edit(BigBall.API.Models.Request.TrackRequest,System.Threading.CancellationToken)">
+            <summary>
+            Изменить дорожку
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Controllers.TrackController.Delete(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удалить дорожку по Id
+            </summary>
+        </member>
         <member name="T:BigBall.API.Enums.TrackTypeResponse">
             <summary>
             Тип дорожки

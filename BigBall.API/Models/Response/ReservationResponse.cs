@@ -38,7 +38,7 @@
         /// <summary>
         /// Дата
         /// </summary>
-        public DateOnly Date { get; set; }
+        public DateTimeOffset Date { get; set; }
 
         /// <summary>
         /// Цена
