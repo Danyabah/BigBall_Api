@@ -25,6 +25,7 @@ namespace BigBall.Context.Contracts.Configuration.Configurations
             builder.Property(x => x.InstitutionId).IsRequired();
             builder.Property(x => x.TrackId).IsRequired();
             builder.Property(x => x.PersonId).IsRequired();
+            builder.Property(x => x.CountPeople).IsRequired();
         }
     }
 }

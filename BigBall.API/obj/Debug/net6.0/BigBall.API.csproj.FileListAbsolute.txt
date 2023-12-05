@@ -98,3 +98,4 @@ C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.API\bin\Debug\ne
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.API\bin\Debug\net6.0\BigBall.Repositories.Contracts.pdb
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.API\bin\Debug\net6.0\BigBall.Services.Contracts.pdb
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.API\obj\Debug\net6.0\BigBall.API.xml
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.API\bin\Debug\net6.0\FluentValidation.dll

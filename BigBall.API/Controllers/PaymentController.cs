@@ -3,6 +3,7 @@ using BigBall.API.Exceptions;
 using BigBall.API.Models.CreateRequest;
 using BigBall.API.Models.Request;
 using BigBall.API.Models.Response;
+using BigBall.API.Validators;
 using BigBall.Services.Contracts.Models;
 using BigBall.Services.Contracts.ServiceContracts;
 using BigBall.Services.Services;
@@ -20,12 +21,14 @@ namespace BigBall.API.Controllers
     public class PaymentController : ControllerBase
     {
         private readonly IPaymentService paymentService;
+        private readonly IApiValidatorService apiValidator;
         private readonly IMapper mapper;
 
-        public PaymentController(IPaymentService paymentService, IMapper mapper)
+        public PaymentController(IPaymentService paymentService, IMapper mapper, IApiValidatorService apiValidator)
         {
             this.paymentService = paymentService;
             this.mapper = mapper;
+            this.apiValidator = apiValidator;
         }
 
         /// <summary>
@@ -61,8 +64,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Add(CreatePaymentRequest model, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(model, cancellationToken);
+
             var paymentModel = mapper.Map<PaymentModel>(model);
             var result = await paymentService.AddAsync(paymentModel, cancellationToken);
+
             return Ok(mapper.Map<PaymentModel>(result));
         }
 
@@ -77,8 +83,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Edit(PaymentRequest request, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(request, cancellationToken);
+
             var paymentModel = mapper.Map<PaymentModel>(request);
             var result = await paymentService.EditAsync(paymentModel, cancellationToken);
+
             return Ok(mapper.Map<PaymentResponse>(result));
         }
 

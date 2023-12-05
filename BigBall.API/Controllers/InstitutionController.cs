@@ -3,6 +3,7 @@ using BigBall.API.Exceptions;
 using BigBall.API.Models.CreateRequest;
 using BigBall.API.Models.Request;
 using BigBall.API.Models.Response;
+using BigBall.API.Validators;
 using BigBall.Services.Contracts.Models;
 using BigBall.Services.Contracts.ServiceContracts;
 using Microsoft.AspNetCore.Mvc;
@@ -19,12 +20,14 @@ namespace BigBall.API.Controllers
     public class InstitutionController : ControllerBase
     {
         private readonly IInstitutionService institutionService;
+        private readonly IApiValidatorService apiValidator;
         private readonly IMapper mapper;
 
-        public InstitutionController(IInstitutionService institutionService, IMapper mapper)
+        public InstitutionController(IInstitutionService institutionService, IMapper mapper, IApiValidatorService apiValidator)
         {
             this.institutionService = institutionService;
             this.mapper = mapper;
+            this.apiValidator = apiValidator;
         }
 
         /// <summary>
@@ -60,8 +63,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Add(CreateInstitutionRequest model, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(model, cancellationToken);
+
             var institutionModel = mapper.Map<InstitutionModel>(model);
             var result = await institutionService.AddAsync(institutionModel, cancellationToken);
+
             return Ok(mapper.Map<InstitutionModel>(result));
         }
 
@@ -76,8 +82,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Edit(InstitutionRequest request, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(request, cancellationToken);
+
             var institutionModel = mapper.Map<InstitutionModel>(request);
             var result = await institutionService.EditAsync(institutionModel, cancellationToken);
+
             return Ok(mapper.Map<InstitutionResponse>(result));
         }
 

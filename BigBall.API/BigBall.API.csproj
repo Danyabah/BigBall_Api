@@ -11,6 +11,7 @@
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.EnumMapping" Version="3.1.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.8.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -30,6 +31,7 @@
     <ProjectReference Include="..\BigBall.Context\BigBall.Context.csproj" />
     <ProjectReference Include="..\BigBall.General\BigBall.General.csproj" />
     <ProjectReference Include="..\BigBall.Repositories\BigBall.Repositories.csproj" />
+    <ProjectReference Include="..\BigBall.Services.Contracts\BigBall.Services.Contracts.csproj" />
     <ProjectReference Include="..\BigBall.Services\BigBall.Services.csproj" />
   </ItemGroup>
 

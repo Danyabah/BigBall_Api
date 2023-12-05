@@ -49,5 +49,10 @@
         /// Описание к брони
         /// </summary>
         public string? Description { get; set; }
+
+        /// <summary>
+        /// Кол-во людей
+        /// </summary>
+        public int CountPeople { get; set; }
     }
 }

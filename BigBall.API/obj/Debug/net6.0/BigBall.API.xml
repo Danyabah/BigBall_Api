@@ -437,6 +437,11 @@
             Описание к брони
             </summary>
         </member>
+        <member name="P:BigBall.API.Models.CreateRequest.CreateReservationRequest.CountPeople">
+            <summary>
+            Кол-во людей
+            </summary>
+        </member>
         <member name="T:BigBall.API.Models.CreateRequest.CreateTrackRequest">
             <summary>
             Модель запроса создания дорожки
@@ -643,9 +648,19 @@
             Описание к брони
             </summary>
         </member>
+        <member name="P:BigBall.API.Models.Response.ReservationResponse.CountPeople">
+            <summary>
+            Кол-во людей
+            </summary>
+        </member>
         <member name="T:BigBall.API.Models.Response.TrackResponse">
             <summary>
             Модель ответа дорожки
+            </summary>
+        </member>
+        <member name="P:BigBall.API.Models.Response.TrackResponse.Id">
+            <summary>
+            Идентификатор
             </summary>
         </member>
         <member name="P:BigBall.API.Models.Response.TrackResponse.Number">
@@ -659,5 +674,47 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "P:BigBall.API.Models.Response.TrackResponse.Type" -->
+        <member name="T:BigBall.API.Validators.IApiValidatorService">
+            <summary>
+            Сервис валидации
+            </summary>
+        </member>
+        <member name="M:BigBall.API.Validators.IApiValidatorService.ValidateAsync``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            Валидирует модель
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Institution.CreateInstitutionRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Institution.InstitutionRequestValidator" -->
+        <member name="T:BigBall.API.Validators.MessageForValidation">
+            <summary>
+            Статический класс для работы с сообщениями в валидаторе
+            </summary>
+        </member>
+        <member name="F:BigBall.API.Validators.MessageForValidation.DefaultMessage">
+            <summary>
+            Сообщение для ошибок NotNull, NotEmpty
+            </summary>
+        </member>
+        <member name="F:BigBall.API.Validators.MessageForValidation.LengthMessage">
+            <summary>
+            Сообщение для ошибок длинны строк
+            </summary>
+        </member>
+        <member name="F:BigBall.API.Validators.MessageForValidation.InclusiveBetweenMessage">
+            <summary>
+            Сообщение для ошибок диапазона
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Payment.CreatePaymentRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Payment.PaymentRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Person.CreatePersonRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Person.PersonRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Promotion.CreatePromotionRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Promotion.PromotionRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Reservation.CreateReservationRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Reservation.ReservationRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Track.CreateTrackRequestValidator" -->
+        <!-- Badly formed XML comment ignored for member "T:BigBall.API.Validators.Track.TrackRequestValidator" -->
     </members>
 </doc>

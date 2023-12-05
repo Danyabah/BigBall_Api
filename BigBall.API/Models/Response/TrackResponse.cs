@@ -8,6 +8,11 @@ namespace BigBall.API.Models.Response
     public class TrackResponse
     {
         /// <summary>
+        /// Идентификатор
+        /// </summary>
+        public Guid Id { get; set; }
+
+        /// <summary>
         /// Номер
         /// </summary>
         public int Number { get; set; }
