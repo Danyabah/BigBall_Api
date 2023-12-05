@@ -175,7 +175,7 @@ namespace BigBall.Services.Services
             if (reservation.PromotionId.HasValue)
             {
                 var promotion = await promotionReadRepository.GetByIdAsync(reservation.PromotionId.Value, cancellationToken);
-                reservation.Price -= reservation.Price * (promotion!.PercentageDiscount / 100);
+                reservation.Price -= reservation.Price * (promotion!.PercentageDiscount / 100m);
             }
         }
 

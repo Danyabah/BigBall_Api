@@ -4,6 +4,7 @@ using BigBall.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BigBall.Context.Migrations
 {
     [DbContext(typeof(BigBallContext))]
-    partial class BigBallContextModelSnapshot : ModelSnapshot
+    [Migration("20231205162854_AddCountPeopleInReservation")]
+    partial class AddCountPeopleInReservation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
