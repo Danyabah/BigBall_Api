@@ -21,8 +21,8 @@ namespace BigBall.Context.Contracts.Configuration.Configurations
                 .IsUnique()
                 .HasDatabaseName($"{nameof(Institution)}_{nameof(Institution.Address)}")
                 .HasFilter($"{nameof(Institution.DeletedAt)} is null");
-            builder.Property(x => x.ClosingTime).IsRequired();
-            builder.Property(x => x.OpeningTime).IsRequired();
+            builder.Property(x => x.ClosingTime).HasMaxLength(8).IsRequired();
+            builder.Property(x => x.OpeningTime).HasMaxLength(8).IsRequired();
             builder.Property(x => x.Email).HasMaxLength(30);
             builder.HasMany(x => x.Reservations).WithOne(x => x.Institution).HasForeignKey(x => x.InstitutionId);
         }

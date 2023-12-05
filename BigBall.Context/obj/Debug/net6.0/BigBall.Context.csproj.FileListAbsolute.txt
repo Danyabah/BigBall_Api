@@ -19,4 +19,3 @@ C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context\obj\Debu
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context\obj\Debug\net6.0\BigBall.Context.pdb
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context\obj\Debug\net6.0\BigBall.Context.genruntimeconfig.cache
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context\obj\Debug\net6.0\ref\BigBall.Context.dll
-C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Context\obj\Debug\net6.0\EFCoreSqlServerDateOnlyTimeOnly.cs

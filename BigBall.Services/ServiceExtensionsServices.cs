@@ -13,7 +13,7 @@ namespace BigBall.Services
         /// Регистрирует все что связано с сервисами
         /// </summary>
         /// <param name="service"></param>
-        public static void RegistrationContext(this IServiceCollection service)
+        public static void RegistrationServices(this IServiceCollection service)
         {
             service.RegistrationOnInterface<IServiceAnchor>(ServiceLifetime.Scoped);
         }
