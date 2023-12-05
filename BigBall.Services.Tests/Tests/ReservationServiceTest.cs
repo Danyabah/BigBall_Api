@@ -9,7 +9,6 @@ using BigBall.Services.Contracts.ServiceContracts;
 using BigBall.Services.Mapper;
 using BigBall.Services.Services;
 using FluentAssertions;
-using System.Net.Sockets;
 using Xunit;
 
 namespace BigBall.Services.Tests.Tests

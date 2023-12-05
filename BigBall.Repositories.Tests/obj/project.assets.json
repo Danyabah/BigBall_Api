@@ -2883,6 +2883,19 @@
         "runtime": {
           "bin/placeholder/BigBall.Repositories.Contracts.dll": {}
         }
+      },
+      "BigBall.Test.Extensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BigBall.Context.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BigBall.Test.Extensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BigBall.Test.Extensions.dll": {}
+        }
       }
     }
   },
@@ -8285,6 +8298,11 @@
       "type": "project",
       "path": "../BigBall.Repositories.Contracts/BigBall.Repositories.Contracts.csproj",
       "msbuildProject": "../BigBall.Repositories.Contracts/BigBall.Repositories.Contracts.csproj"
+    },
+    "BigBall.Test.Extensions/1.0.0": {
+      "type": "project",
+      "path": "../BigBall.Test.Extensions/BigBall.Test.Extensions.csproj",
+      "msbuildProject": "../BigBall.Test.Extensions/BigBall.Test.Extensions.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8293,6 +8311,7 @@
       "BigBall.Context.Tests >= 1.0.0",
       "BigBall.Repositories >= 1.0.0",
       "BigBall.Repositories.Contracts >= 1.0.0",
+      "BigBall.Test.Extensions >= 1.0.0",
       "FluentAssertions >= 6.12.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "xunit >= 2.6.2",
@@ -8344,6 +8363,9 @@
             },
             "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj": {
               "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj"
+            },
+            "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Test.Extensions\\BigBall.Test.Extensions.csproj": {
+              "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Test.Extensions\\BigBall.Test.Extensions.csproj"
             }
           }
         }

@@ -21,6 +21,7 @@
     <ProjectReference Include="..\BigBall.Context.Tests\BigBall.Context.Tests.csproj" />
     <ProjectReference Include="..\BigBall.Repositories.Contracts\BigBall.Repositories.Contracts.csproj" />
     <ProjectReference Include="..\BigBall.Repositories\BigBall.Repositories.csproj" />
+    <ProjectReference Include="..\BigBall.Test.Extensions\BigBall.Test.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

@@ -173,3 +173,5 @@ C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Repositories.Tes
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Repositories.Tests\obj\Debug\net6.0\BigBall.Repositories.Tests.pdb
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Repositories.Tests\obj\Debug\net6.0\BigBall.Repositories.Tests.genruntimeconfig.cache
 C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Repositories.Tests\obj\Debug\net6.0\ref\BigBall.Repositories.Tests.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Repositories.Tests\bin\Debug\net6.0\BigBall.Test.Extensions.dll
+C:\Users\koche\Desktop\Новая папка\APIProject\BigBall.Repositories.Tests\bin\Debug\net6.0\BigBall.Test.Extensions.pdb

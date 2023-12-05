@@ -12,6 +12,7 @@
           "BigBall.Context.Tests": "1.0.0",
           "BigBall.Repositories": "1.0.0",
           "BigBall.Repositories.Contracts": "1.0.0",
+          "BigBall.Test.Extensions": "1.0.0",
           "FluentAssertions": "6.12.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "xunit": "2.6.2",
@@ -1743,6 +1744,14 @@
         "runtime": {
           "BigBall.Repositories.Contracts.dll": {}
         }
+      },
+      "BigBall.Test.Extensions/1.0.0": {
+        "dependencies": {
+          "BigBall.Context.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "BigBall.Test.Extensions.dll": {}
+        }
       }
     }
   },
@@ -2817,6 +2826,11 @@
       "sha512": ""
     },
     "BigBall.Repositories.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BigBall.Test.Extensions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

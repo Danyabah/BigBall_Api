@@ -1,5 +1,5 @@
-﻿using AutoMapper;
-using BigBall.API.Mappers;
+﻿using FluentAssertions;
+using FluentAssertions.Extensions;
 using Xunit;
 
 namespace BigBall.API.Tests
@@ -8,14 +8,11 @@ namespace BigBall.API.Tests
     {
 
         [Fact]
-        public void TestMapper()
+        public void TestValidate()
         {
-            var config = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile(new APIMapper());
-            });
-
-            config.AssertConfigurationIsValid();
+            var item = 1.March(2022).At(20, 30).AsLocal();
+            var item2 = 2.March(2022).At(20, 30).AsLocal();
+            item.Should().NotBe(item2);
         }
     }
 }

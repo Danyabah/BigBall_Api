@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigBall.Services.Tests", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigBall.API.Tests", "..\BigBall.API.Tests\BigBall.API.Tests.csproj", "{CF834A8C-F05D-47E7-9202-47E3D36CB1A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigBall.Test.Extensions", "..\BigBall.Test.Extensions\BigBall.Test.Extensions.csproj", "{93DB9EC1-00A5-48F0-85ED-AD1706C44B1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{CF834A8C-F05D-47E7-9202-47E3D36CB1A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF834A8C-F05D-47E7-9202-47E3D36CB1A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF834A8C-F05D-47E7-9202-47E3D36CB1A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DB9EC1-00A5-48F0-85ED-AD1706C44B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DB9EC1-00A5-48F0-85ED-AD1706C44B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DB9EC1-00A5-48F0-85ED-AD1706C44B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DB9EC1-00A5-48F0-85ED-AD1706C44B1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
