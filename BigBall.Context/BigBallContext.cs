@@ -10,7 +10,7 @@ namespace BigBall.Context
     /// Контекст работы с БД
     /// </summary>
     /// <remarks>
-    /// 1) dotnet tool install --global dotnet -ef --version 6.0.0
+    /// 1) dotnet tool install --global dotnet-ef --version 6.0.0
     /// 2) dotnet tool update --global dotnet-ef
     /// 3) dotnet ef migrations add [name] --project BigBall.Context\BigBall.Context.csproj
     /// 4) dotnet ef database update --project BigBall.Context\BigBall.Context.csproj
