@@ -42,6 +42,6 @@ namespace BigBall.Repositories.ReadRepositories
                 .ToDictionaryAsync(x => x.Id, cancellationToken);
 
         Task<bool> IPersonReadRepository.IsNotNullAsync(Guid id, CancellationToken cancellationToken)
-            => reader.Read<Institution>().ById(id).AnyAsync(x => !x.DeletedAt.HasValue, cancellationToken);
+            => reader.Read<Person>().ById(id).AnyAsync(x => !x.DeletedAt.HasValue, cancellationToken);
     }
 }

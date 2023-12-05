@@ -3,6 +3,7 @@ using BigBall.API.Exceptions;
 using BigBall.API.Models.CreateRequest;
 using BigBall.API.Models.Request;
 using BigBall.API.Models.Response;
+using BigBall.API.Validators;
 using BigBall.Services.Contracts.Models;
 using BigBall.Services.Contracts.ServiceContracts;
 using Microsoft.AspNetCore.Mvc;
@@ -19,12 +20,14 @@ namespace BigBall.API.Controllers
     public class PromotionController : ControllerBase
     {
         private readonly IPromotionService promotionService;
+        private readonly IApiValidatorService apiValidator;
         private readonly IMapper mapper;
 
-        public PromotionController(IPromotionService promotionService, IMapper mapper)
+        public PromotionController(IPromotionService promotionService, IMapper mapper, IApiValidatorService apiValidator)
         {
             this.promotionService = promotionService;
             this.mapper = mapper;
+            this.apiValidator = apiValidator;
         }
 
         /// <summary>
@@ -60,8 +63,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Add(CreatePromotionRequest model, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(model, cancellationToken);
+
             var promotionModel = mapper.Map<PromotionModel>(model);
             var result = await promotionService.AddAsync(promotionModel, cancellationToken);
+
             return Ok(mapper.Map<PromotionResponse>(result));
         }
 
@@ -76,8 +82,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Edit(PromotionRequest request, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(request, cancellationToken);
+
             var promotionModel = mapper.Map<PromotionModel>(request);
             var result = await promotionService.EditAsync(promotionModel, cancellationToken);
+
             return Ok(mapper.Map<PromotionResponse>(result));
         }
 

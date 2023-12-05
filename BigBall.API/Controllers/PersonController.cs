@@ -3,6 +3,7 @@ using BigBall.API.Exceptions;
 using BigBall.API.Models.CreateRequest;
 using BigBall.API.Models.Request;
 using BigBall.API.Models.Response;
+using BigBall.API.Validators;
 using BigBall.Services.Contracts.Models;
 using BigBall.Services.Contracts.ServiceContracts;
 using BigBall.Services.Services;
@@ -20,12 +21,14 @@ namespace BigBall.API.Controllers
     public class PersonController : ControllerBase
     {
         private readonly IPersonService personService;
+        private readonly IApiValidatorService apiValidator;
         private readonly IMapper mapper;
 
-        public PersonController(IPersonService personService, IMapper mapper)
+        public PersonController(IPersonService personService, IMapper mapper, IApiValidatorService apiValidator)
         {
             this.personService = personService;
             this.mapper = mapper;
+            this.apiValidator = apiValidator;
         }
 
         /// <summary>
@@ -61,8 +64,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Add(CreatePersonRequest model, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(model, cancellationToken);
+
             var personModel = mapper.Map<PersonModel>(model);
             var result = await personService.AddAsync(personModel, cancellationToken);
+
             return Ok(mapper.Map<PersonModel>(result));
         }
 
@@ -77,8 +83,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Edit(PersonRequest request, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(request, cancellationToken);
+
             var personModel = mapper.Map<PersonModel>(request);
             var result = await personService.EditAsync(personModel, cancellationToken);
+
             return Ok(mapper.Map<PersonResponse>(result));
         }
 

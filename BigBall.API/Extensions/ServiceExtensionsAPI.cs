@@ -7,6 +7,7 @@ using BigBall.Repositories;
 using BigBall.Services;
 using BigBall.API.Mappers;
 using Newtonsoft.Json.Converters;
+using BigBall.API.Validators;
 
 namespace BigBall.API.Extensions
 {
@@ -22,6 +23,7 @@ namespace BigBall.API.Extensions
         {
             services.AddTransient<IDateTimeProvider, DateTimeProvider>();
             services.AddTransient<IDbWriterContext, DbWriterContext>();
+            services.AddTransient<IApiValidatorService, ApiValidatorService>();
             services.RegistrationContext();
             services.RegistrationRepository();
             services.RegistrationServices();

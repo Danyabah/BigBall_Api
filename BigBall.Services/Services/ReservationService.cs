@@ -47,6 +47,7 @@ namespace BigBall.Services.Services
             var reservation = mapper.Map<Reservation>(model);
 
             await SetPriceReservation(reservation, cancellationToken);
+            await CheckCapacity(reservation.CountPeople, reservation.TrackId, cancellationToken);
 
             reservationWriteRepository.Add(reservation);
             await unitOfWork.SaveChangesAsync(cancellationToken);
@@ -84,6 +85,7 @@ namespace BigBall.Services.Services
             reservation = mapper.Map<Reservation>(model);
 
             await SetPriceReservation(reservation, cancellationToken);
+            await CheckCapacity(reservation.CountPeople, reservation.TrackId, cancellationToken);
 
             reservationWriteRepository.Update(reservation);
             await unitOfWork.SaveChangesAsync(cancellationToken);
@@ -173,7 +175,17 @@ namespace BigBall.Services.Services
             if (reservation.PromotionId.HasValue)
             {
                 var promotion = await promotionReadRepository.GetByIdAsync(reservation.PromotionId.Value, cancellationToken);
-                reservation.Price -= reservation.Price * (promotion!.PercentageDiscount / 100);
+                reservation.Price -= reservation.Price * (promotion!.PercentageDiscount / 100m);
+            }
+        }
+
+        async private Task CheckCapacity(int count, Guid id, CancellationToken cancellationToken)
+        {
+            var capacity = await trackReadRepository.GetByIdAsync(id, cancellationToken);
+
+            if ( count > capacity!.Capacity)
+            {
+                throw new BigBallInvalidOperationException($"Вы не можете забронировать дорожку на {count} человек при вместимости дорожки {capacity.Capacity}");
             }
         }
     }

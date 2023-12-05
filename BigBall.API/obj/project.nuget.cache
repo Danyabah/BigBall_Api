@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cVmBP+t6BU+1b4DTuVDuQnnzo4ZWSeODui3MI2v6WqZXrGpqSjHJexapy47BExuxNgkpbHpIY70eDMskPRt4xQ==",
+  "dgSpecHash": "9Uzi2iULYl28Zq20d6sBCfhh1CdhXmzNiYcyOEGbYhRVEKwwf0kyDJCAB4LTniwQv4OlUhLacz2kLluOBrRUXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.API\\BigBall.API.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\koche\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\koche\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\koche\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\koche\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
     "C:\\Users\\koche\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\koche\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.0.0\\microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512",
     "C:\\Users\\koche\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0.nupkg.sha512",

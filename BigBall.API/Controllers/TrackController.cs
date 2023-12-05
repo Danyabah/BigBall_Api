@@ -3,6 +3,7 @@ using BigBall.API.Exceptions;
 using BigBall.API.Models.CreateRequest;
 using BigBall.API.Models.Request;
 using BigBall.API.Models.Response;
+using BigBall.API.Validators;
 using BigBall.Services.Contracts.Models;
 using BigBall.Services.Contracts.ServiceContracts;
 using Microsoft.AspNetCore.Mvc;
@@ -19,12 +20,14 @@ namespace BigBall.API.Controllers
     public class TrackController : ControllerBase
     {
         private readonly ITrackService trackService;
+        private readonly IApiValidatorService apiValidator;
         private readonly IMapper mapper;
 
-        public TrackController(ITrackService trackService, IMapper mapper)
+        public TrackController(ITrackService trackService, IMapper mapper, IApiValidatorService apiValidator)
         {
             this.trackService = trackService;
             this.mapper = mapper;
+            this.apiValidator = apiValidator;
         }
 
         /// <summary>
@@ -60,8 +63,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Add(CreateTrackRequest model, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(model, cancellationToken);
+
             var trackModel = mapper.Map<TrackModel>(model);
             var result = await trackService.AddAsync(trackModel, cancellationToken);
+
             return Ok(mapper.Map<TrackResponse>(result));
         }
 
@@ -76,8 +82,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Edit(TrackRequest request, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(request, cancellationToken);
+
             var trackModel = mapper.Map<TrackModel>(request);
             var result = await trackService.EditAsync(trackModel, cancellationToken);
+
             return Ok(mapper.Map<TrackResponse>(result));
         }
 

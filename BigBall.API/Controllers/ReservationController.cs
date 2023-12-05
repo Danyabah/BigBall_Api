@@ -3,6 +3,7 @@ using BigBall.API.Exceptions;
 using BigBall.API.Models.CreateRequest;
 using BigBall.API.Models.Request;
 using BigBall.API.Models.Response;
+using BigBall.API.Validators;
 using BigBall.Services.Contracts.Models;
 using BigBall.Services.Contracts.ModelsRequest;
 using BigBall.Services.Contracts.ServiceContracts;
@@ -20,12 +21,14 @@ namespace BigBall.API.Controllers
     public class ReservationController : ControllerBase
     {
         private readonly IReservationService reservationService;
+        private readonly IApiValidatorService apiValidator;
         private readonly IMapper mapper;
 
-        public ReservationController(IReservationService reservationService, IMapper mapper)
+        public ReservationController(IReservationService reservationService, IMapper mapper, IApiValidatorService apiValidator)
         {
             this.reservationService = reservationService;
             this.mapper = mapper;
+            this.apiValidator = apiValidator;
         }
 
         /// <summary>
@@ -61,8 +64,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Add(CreateReservationRequest model, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(model, cancellationToken);
+
             var reservationModel = mapper.Map<ReservationModelRequest>(model);
             var result = await reservationService.AddAsync(reservationModel, cancellationToken);
+
             return Ok(mapper.Map<ReservationResponse>(result));
         }
 
@@ -77,8 +83,11 @@ namespace BigBall.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Edit(ReservationRequest request, CancellationToken cancellationToken)
         {
+            await apiValidator.ValidateAsync(request, cancellationToken);
+
             var reservationModel = mapper.Map<ReservationModelRequest>(request);
             var result = await reservationService.EditAsync(reservationModel, cancellationToken);
+
             return Ok(mapper.Map<ReservationResponse>(result));
         }
 
