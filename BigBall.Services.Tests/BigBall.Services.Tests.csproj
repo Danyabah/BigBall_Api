@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="xunit" Version="2.6.2" />
@@ -14,6 +15,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BigBall.Context.Tests\BigBall.Context.Tests.csproj" />
+    <ProjectReference Include="..\BigBall.Repositories\BigBall.Repositories.csproj" />
+    <ProjectReference Include="..\BigBall.Services.Contracts\BigBall.Services.Contracts.csproj" />
+    <ProjectReference Include="..\BigBall.Services\BigBall.Services.csproj" />
   </ItemGroup>
 
 </Project>

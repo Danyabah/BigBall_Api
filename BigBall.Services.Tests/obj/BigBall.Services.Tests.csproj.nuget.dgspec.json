@@ -4,14 +4,14 @@
     "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\BigBall.Services.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\BigBall.Services.Tests.csproj": {
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\BigBall.Services.Tests.csproj",
-        "projectName": "BigBall.Services.Tests",
-        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\BigBall.Services.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj",
+        "projectName": "BigBall.Common.Entity",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj",
         "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\obj\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visuаl\\Корень\\NuGetPackages"
@@ -46,6 +46,677 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts.Configuration\\BigBall.Context.Contracts.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts.Configuration\\BigBall.Context.Contracts.Configuration.csproj",
+        "projectName": "BigBall.Context.Contracts.Configuration",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts.Configuration\\BigBall.Context.Contracts.Configuration.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj",
+        "projectName": "BigBall.Context.Contracts",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Tests\\BigBall.Context.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Tests\\BigBall.Context.Tests.csproj",
+        "projectName": "BigBall.Context.Tests",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Tests\\BigBall.Context.Tests.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\BigBall.Context.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\BigBall.Context.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\BigBall.Context.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\BigBall.Context.csproj",
+        "projectName": "BigBall.Context",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\BigBall.Context.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts.Configuration\\BigBall.Context.Contracts.Configuration.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts.Configuration\\BigBall.Context.Contracts.Configuration.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj",
+        "projectName": "BigBall.General",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\BigBall.Repositories.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\BigBall.Repositories.Contracts.csproj",
+        "projectName": "BigBall.Repositories.Contracts",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\BigBall.Repositories.Contracts.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj",
+        "projectName": "BigBall.Repositories",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\BigBall.Repositories.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\BigBall.Repositories.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\BigBall.Services.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\BigBall.Services.Contracts.csproj",
+        "projectName": "BigBall.Services.Contracts",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\BigBall.Services.Contracts.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\BigBall.Services.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\BigBall.Services.Tests.csproj",
+        "projectName": "BigBall.Services.Tests",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\BigBall.Services.Tests.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Tests\\BigBall.Context.Tests.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Tests\\BigBall.Context.Tests.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories\\BigBall.Repositories.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\BigBall.Services.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\BigBall.Services.Contracts.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\BigBall.Services.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\BigBall.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.12.0, )"
@@ -63,6 +734,97 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.5.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\BigBall.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\BigBall.Services.csproj",
+        "projectName": "BigBall.Services",
+        "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\BigBall.Services.csproj",
+        "packagesPath": "C:\\Users\\koche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visuаl\\Корень\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\koche\\Desktop\\Учеба\\Программирование\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Common.Entity\\BigBall.Common.Entity.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Context.Contracts\\BigBall.Context.Contracts.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.General\\BigBall.General.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\BigBall.Repositories.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Repositories.Contracts\\BigBall.Repositories.Contracts.csproj"
+              },
+              "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\BigBall.Services.Contracts.csproj": {
+                "projectPath": "C:\\Users\\koche\\Desktop\\Новая папка\\APIProject\\BigBall.Services.Contracts\\BigBall.Services.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.EnumMapping": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
