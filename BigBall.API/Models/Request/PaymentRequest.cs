@@ -11,5 +11,10 @@ namespace BigBall.API.Models.Request
         /// Идентификатор
         /// </summary>
         public Guid Id { get; set; }
+
+        public object TestValidate(PaymentRequest model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
